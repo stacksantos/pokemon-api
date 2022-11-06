@@ -11,6 +11,7 @@ function getFetch() {
     const poke = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
     fetch(poke)
+    // test
         .then((res) => res.json())
         .then((data) => {
             console.log(data.abilities.forEach(e => {
